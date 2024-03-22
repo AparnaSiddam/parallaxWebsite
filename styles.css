@@ -1,0 +1,77 @@
+body, html{
+    margin: 0;
+    line-height: 1.8;
+    height: 100%;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.largeImage1, .largeImage2, .smallImage1, .smallImage2{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    background-attachment: fixed;
+}
+
+.largeImage1{
+    background-image: url(img/img4.jpg);
+    min-height: 100%;
+}
+
+.largeImage2{
+    background-image: url(img/img1.jpg);
+    min-height: 100%;
+}
+
+.smallImage1{
+    background-image: url(img/img2.jpg);
+    min-height: 400px;
+}
+
+.smallImage2{
+    background-image: url(img/img3.jpg);
+    min-height: 400px;
+}
+
+.imgText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+.darkHeader{
+    background-color: #555;
+    padding: 10px;
+    color: #fff;
+}
+
+.lightHeader{
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+}
+
+.sectionDark, .sectionLight{
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.sectionDark{
+    background-color: #444;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .largeImage1, .largeImage2, .smallImage1, .smallImage2{
+        background-attachment: scroll;
+    }
+}
